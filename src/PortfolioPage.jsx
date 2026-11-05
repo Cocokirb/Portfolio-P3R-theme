@@ -213,11 +213,11 @@ export default function PortfolioPage({ section }) {
         .portfolio-heading p, .portfolio-category { color: #65e9ff; font: 700 13px 'Bebas Neue', sans-serif; letter-spacing: 2px; }
         .portfolio-heading h1 { margin: 8px 0 14px; color: white; font: italic 64px/.95 Anton, sans-serif; text-transform: uppercase; }
         .portfolio-intro { max-width: 760px; margin-bottom: 28px; color: #d3e6f4; font: 18px/1.5 'Montserrat', sans-serif; }
-        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px; }
-        .portfolio-card { min-width: 0; padding: 18px; background: linear-gradient(145deg, rgba(15, 39, 82, .96), rgba(7, 24, 57, .96)); border: 1px solid rgba(103, 226, 255, .24); border-bottom: 3px solid #087ab3; }
+        .portfolio-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        .portfolio-card { min-width: 0; min-height: 190px; padding: 24px; background: linear-gradient(145deg, rgba(15, 39, 82, .96), rgba(7, 24, 57, .96)); border: 1px solid rgba(103, 226, 255, .24); border-bottom: 3px solid #087ab3; }
         .portfolio-card h2 { margin: 7px 0 10px; color: white; font: 28px/1.05 Anton, sans-serif; text-transform: uppercase; }
         .portfolio-description { color: #d6e5f1; font: 15px/1.55 'Montserrat', sans-serif; }
-        .portfolio-image-row { display: flex; gap: 8px; height: 150px; margin: -18px -18px 16px; overflow: hidden; background: #0b2950; }
+        .portfolio-image-row { display: flex; gap: 8px; height: clamp(200px, 30vh, 320px); margin: -24px -24px 20px; overflow: hidden; background: #0b2950; }
         .portfolio-image-row img { width: 100%; min-width: 0; height: 100%; object-fit: cover; }
         .portfolio-image-row img + img { border-left: 2px solid #22d7ee; }
         .portfolio-tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 16px 0 0; list-style: none; }
