@@ -11,7 +11,7 @@ import pixCertificate from './assets/certification-pix-20250218.pdf'
 import persona3 from './assets/P3R.jpg'
 import persona5 from './assets/P5R all caracter.png'
 import sao from './assets/sao.jpg'
-import attackOnTitan from './assets/SNK.jpg'
+import reZeroSeason4 from './assets/affiche s4 Re zero.png'
 import chainsawMan from './assets/CM-cover1.jpg'
 
 const PAGES = {
@@ -36,7 +36,6 @@ const PAGES = {
         category: 'IDENTITÉ GRAPHIQUE',
         title: 'Portfolio Persona 3 Reload',
         description: 'Portfolio interactif inspiré de Persona 3 Reload, avec une navigation animée et une direction artistique dédiée.',
-        tags: ['React', 'Vite', 'UI'],
       },
     ],
   },
@@ -81,12 +80,12 @@ const PAGES = {
       },
       {
         category: 'ANIMÉS',
-        title: 'Sword Art Online · L’Attaque des Titans',
-        description: 'Sword Art Online est mon animé préféré. J’apprécie aussi l’univers de L’Attaque des Titans.',
+        title: 'Sword Art Online · Re:Zero',
+        description: 'Sword Art Online est mon animé préféré. J’apprécie aussi l’univers de Re:Zero, et j’attends avec impatience sa quatrième saison.',
         image: sao,
         imageAlt: 'Visuel de Sword Art Online',
-        secondImage: attackOnTitan,
-        secondImageAlt: 'Visuel de L’Attaque des Titans',
+        secondImage: reZeroSeason4,
+        secondImageAlt: 'Affiche de la saison 4 de Re:Zero',
       },
       {
         category: 'LECTURE · MANGAS',
@@ -218,7 +217,7 @@ export default function PortfolioPage({ section }) {
         .portfolio-card h2 { margin: 7px 0 10px; color: white; font: 28px/1.05 Anton, sans-serif; text-transform: uppercase; }
         .portfolio-description { color: #d6e5f1; font: 15px/1.55 'Montserrat', sans-serif; }
         .portfolio-image-row { display: flex; gap: 8px; height: clamp(200px, 30vh, 320px); margin: -24px -24px 20px; overflow: hidden; background: #0b2950; }
-        .portfolio-image-row img { width: 100%; min-width: 0; height: 100%; object-fit: cover; }
+        .portfolio-image-row img { width: 100%; min-width: 0; height: 100%; object-fit: contain; }
         .portfolio-image-row img + img { border-left: 2px solid #22d7ee; }
         .portfolio-tags { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 16px 0 0; list-style: none; }
         .portfolio-tags li { padding: 4px 8px; color: #0b1830; background: #7defff; font: 700 12px 'Bebas Neue', sans-serif; }
